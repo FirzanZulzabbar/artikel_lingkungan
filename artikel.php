@@ -46,7 +46,7 @@
               <img
                 src="assets/img/peep-7.svg"
                 alt="article-picture"
-                class="md:w-full md:h-full col-span-1 mx-auto m-6 md:my-auto rounded-lg md:rounded:xl ring-1"
+                class="md:w-full md:h-full col-span-1 mx-auto m-6 md:my-auto rounded-lg md:rounded:xl"
               />
               <figcaption class="col-span-3 p-4 md:p-6">
                 <h4 class="text-lg leading-tight font-medium sm:text-xl lg:text-2xl"><?= $row['judul']; ?></h4>
