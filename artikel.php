@@ -1,4 +1,12 @@
-<?php require_once 'config.php';?>
+<?php require_once 'config.php';
+
+session_start();
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+  header("Location: admin/masuk.php");
+  exit();
+}
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,13 +25,14 @@
     <main class="font-inter tracking-tight">
       <section class="my-10 lg:grid lg:grid-cols-4 lg:px-8">
         <div class="lg:col-span-2">
-          <h1 class="text-3xl px-6 font-light sm:text-4xl md:text-5xl lg:text-7xl lg:font-semibold lg:pt-8">Kamu lagi pengen baca apa hari ini?</h1>
-          <p class="px-6 py-2 leading-tight text-stone-600 text-sm sm:text-base md:text-lg lg:text-xl">
+          <h1 class="text-3xl px-6 font-light sm:text-4xl md:text-5xl lg:text-7xl lg:font-semibold">Kamu lagi pengen baca apa hari ini, <span><?= htmlspecialchars($_SESSION['username']); ?></span>?</h1>
+          <p class="px-6 py-2 leading-tight text-stone-600 text-sm sm:text-base md:text-lg lg:text-xl lg:mt-4">
             Dapatkan inspirasi dan solusi seputar cara menjaga kelestarian alam,
             serta dampak positifnya bagi kehidupan.
           </p>
+          <a href="index.php" class="inline-block px-6 py-2 bg-stone-900 text-slate-100 rounded-full md:text-lg lg:ml-4 lg:mt-4 xl:text-xl xl:px-8">Beranda</a>
         </div>
-        <div class="hidden lg:visible lg:col-span-2 lg:flex lg:mx-auto">
+        <div class="hidden lg:visible lg:col-span-1 lg:flex lg:mx-auto">
           <img src="assets/img/peep-17.svg" alt="peesp!">
           <img src="assets/img/peep-7.svg" alt="peesp!" class="lg:scale-x-[-1]">
         </div>

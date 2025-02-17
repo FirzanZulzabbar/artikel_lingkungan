@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <p class="text-sm text-gray-600">Belum punya akun? 
                 <a href="daftar.php" class="text-green-600 hover:underline">Daftar di sini</a>
             </p>
-            <a href="../index.html"
+            <a href="../index.php"
                 class="inline-block mt-2 px-4 py-2 text-sm text-green-600 border border-green-600 rounded hover:bg-green-600 hover:text-white transition duration-200">
                 Kembali
             </a>

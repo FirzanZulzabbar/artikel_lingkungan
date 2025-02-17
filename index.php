@@ -1,3 +1,15 @@
+<?php
+session_start(); // Memulai sesi
+
+// Cek jika pengguna sudah login
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+    // Jika belum login, tampilkan pesan peringatan di halaman
+    $error = "Anda harus login terlebih dahulu untuk mengakses artikel.";
+} else {
+    $error = ""; // Kosongkan error jika sudah login
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
