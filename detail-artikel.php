@@ -43,7 +43,7 @@ $artikel = $result->fetch_assoc();?>
           alt="logo"
           class="mx-auto w-3/4 py-8 rounded-xl"
         />
-        <p class="mt-4 p-6 text-stone-600 sm:p8 lg:mt-6 leading-tight lg:text-lg lg:px-10">
+        <p class="mt-4 p-6 text-stone-600 sm:p8 lg:mt-6 leading-tight lg:text-lg lg:px-28">
           <?= nl2br(htmlspecialchars($artikel['isi_deskripsi'])); ?>
         </p>
       </section>

@@ -53,7 +53,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
               class="col-span-1 grid grid-cols-4 ring-1 ring-stone-200 rounded-xl p-4"
             >
               <img
-                src="assets/img/peep-7.svg"
+                src="assets/images/677218cc19753_environment-indonesia.webp"
                 alt="article-picture"
                 class="md:w-full md:h-full col-span-1 mx-auto m-6 md:my-auto rounded-lg md:rounded:xl"
               />
