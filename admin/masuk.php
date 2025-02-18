@@ -38,14 +38,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Masuk - Peduli Lingkungan</title>
+    <title>Masuk</title>
     <link rel="stylesheet" href="../src/output.css">
 </head>
 
-<body class="flex items-center justify-center min-h-screen bg-gray-100 font-inter">
-
+<body class="flex items-center justify-center min-h-screen bg-gray-100 font-inter rounded-lg">
     <div class="w-full max-w-md bg-white p-8 rounded-lg shadow-md">
-        <h2 class="text-2xl font-semibold text-center text-green-600 mb-6">Masuk</h2>
+        <h2 class="text-2xl font-semibold text-center text-black mb-6">Masuk</h2>
 
         <?php if ($error): ?>
             <div class="mb-4 p-3 text-red-700 bg-red-100 border border-red-400 rounded">

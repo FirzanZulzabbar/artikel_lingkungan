@@ -2,7 +2,7 @@
 
 $id = isset($_GET['id']) ? $_GET['id'] : null;
 
-$sql = "SELECT id, judul, gambar_artikel,deskripsi_gambar, penulis, isi_deskripsi, tanggal_publikasi FROM Artikel WHERE id = ?";
+$sql = "SELECT id, judul, gambar_artikel,deskripsi_gambar, penulis, isi_deskripsi FROM Artikel WHERE id = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $id);
 $stmt->execute();
@@ -35,15 +35,15 @@ $artikel = $result->fetch_assoc();?>
     </header>
     <main class="font-inter tracking-tight leading-tight md:px-6">
       <section class="p-4">
-        <h1 class="text-3xl text-center font-semibold my-6 lg:text-4xl">
+        <h1 class="px-6 text-3xl text-center font-semibold my-6 md:text-4xl lg:text-4xl">
         <?= htmlspecialchars($artikel['judul']); ?>
         </h1>
         <img
           src="<?= $artikel['gambar_artikel']; ?>" alt="<?= $artikel['judul']; ?>"
           alt="logo"
-          class="mx-auto w-3/4 py-8 ring-1 ring-stone-200 rounded-xl"
+          class="mx-auto w-3/4 py-8 rounded-xl"
         />
-        <p class="mt-4 text-stone-700 lg:mt-6 leading-tight lg:text-lg">
+        <p class="mt-4 p-6 text-stone-600 sm:p8 lg:mt-6 leading-tight lg:text-lg lg:px-10">
           <?= nl2br(htmlspecialchars($artikel['isi_deskripsi'])); ?>
         </p>
       </section>

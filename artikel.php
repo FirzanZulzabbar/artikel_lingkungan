@@ -19,7 +19,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
   <body>
     <header class="font-inter tracking-tight leading-tight">
       <nav class="flex justify-between p-4 items-center">
-        <a class="flex items-center gap-4 text-lg md:text-2xl lg:hidden" href="index.html" ><span class="font-bold">&larr;</span>Artikel</a>
+        <a class="flex items-center gap-4 text-lg md:text-2xl lg:hidden" href="index.php" ><span class="font-bold">&larr;</span>Artikel</a>
       </nav>
     </header>
     <main class="font-inter tracking-tight">

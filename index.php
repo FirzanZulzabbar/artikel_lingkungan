@@ -1,12 +1,10 @@
 <?php
-session_start(); // Memulai sesi
+session_start(); 
 
-// Cek jika pengguna sudah login
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
-    // Jika belum login, tampilkan pesan peringatan di halaman
     $error = "Anda harus login terlebih dahulu untuk mengakses artikel.";
 } else {
-    $error = ""; // Kosongkan error jika sudah login
+    $error = null;
 }
 ?>
 
@@ -15,24 +13,20 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Testing Programming</title>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Readify</title>
     <link rel="stylesheet" href="src/output.css" />
   </head>
   <body>
     <main>
       <section
-        class="py-16 font-inter text-center mx-auto p-4 space-y-4 sm:px-8 sm:py-18 md:p-10 md:py-24 xl:px-12 xl:py-16 lg:mt-20"
+        class="py-16 font-inter text-center mx-auto p-2 space-y-4 sm:px-6 sm:py-18 md:p-10 md:py-24 xl:px-12 xl:py-16 lg:mt-20"
       >
         <p class="text-pink-500 text-sm sm:text-base lg:text-xl xl:text-xl">
           * Peduli Lingkungan
         </p>
         <p
           class="text-5xl tracking-tight font-light sm:text-6xl md:text-7xl 2xl:text-8xl"
-        >
-          Nature whispers wisdom through the wind, paints beauty with sunsets,
-          and sings serenity in waves.
+        > Selamat datang di pusat informasi lingkungan untuk meningkatkan kesadaran dan menginspirasi perubahan!
         </p>
         <p
           class="mt-4 tracking-tight leading-tight text-sm sm:text-base md:text-lg lg:text-xl lg:px-10 xl:text-2xl 2xl:text-2xl"
@@ -111,7 +105,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         </div>
       </section>
     </main>
-    <footer class="p-4 font-inter mt-16 relative sm:p-6 md:p-10" id="team">
+    <footer class="p-4 font-inter mt-16 relative sm:px-8 md:px-10 lg:ml-4" id="team">
       <h1 class="text-3xl tracking-tight sm:text-5xl">
         Meet our <span class="text-pink-500">team!</span>
         <p>Behind Every Great Work, There’s a Great Team.</p>

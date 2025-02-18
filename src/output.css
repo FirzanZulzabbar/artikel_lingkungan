@@ -630,6 +630,10 @@ video {
   margin-top: 2rem;
 }
 
+.ml-4{
+  margin-left: 1rem;
+}
+
 .block{
   display: block;
 }
@@ -652,10 +656,6 @@ video {
 
 .h-8{
   height: 2rem;
-}
-
-.h-screen{
-  height: 100vh;
 }
 
 .min-h-screen{
@@ -819,6 +819,10 @@ video {
   padding: 2rem;
 }
 
+.p-6{
+  padding: 1.5rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -842,6 +846,10 @@ video {
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.pl-4{
+  padding-left: 1rem;
 }
 
 .text-center{
@@ -910,6 +918,11 @@ video {
   letter-spacing: -0.025em;
 }
 
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
 .text-gray-600{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
@@ -918,11 +931,6 @@ video {
 .text-gray-700{
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity, 1));
-}
-
-.text-green-500{
-  --tw-text-opacity: 1;
-  color: rgb(34 197 94 / var(--tw-text-opacity, 1));
 }
 
 .text-green-600{
@@ -1077,12 +1085,13 @@ video {
     margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
   }
 
-  .sm\:p-6{
-    padding: 1.5rem;
-  }
-
   .sm\:p-8{
     padding: 2rem;
+  }
+
+  .sm\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .sm\:px-8{
@@ -1140,6 +1149,14 @@ video {
     margin-top: 1.5rem;
   }
 
+  .md\:block{
+    display: block;
+  }
+
+  .md\:inline-block{
+    display: inline-block;
+  }
+
   .md\:h-full{
     height: 100%;
   }
@@ -1167,6 +1184,11 @@ video {
 
   .md\:p-6{
     padding: 1.5rem;
+  }
+
+  .md\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:px-6{
@@ -1198,6 +1220,11 @@ video {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 1024px){
@@ -1205,12 +1232,12 @@ video {
     visibility: visible;
   }
 
-  .lg\:col-span-2{
-    grid-column: span 2 / span 2;
-  }
-
   .lg\:col-span-1{
     grid-column: span 1 / span 1;
+  }
+
+  .lg\:col-span-2{
+    grid-column: span 2 / span 2;
   }
 
   .lg\:mx-auto{
@@ -1269,11 +1296,6 @@ video {
     padding-right: 2rem;
   }
 
-  .lg\:px-4{
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
   .lg\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1297,6 +1319,11 @@ video {
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .lg\:font-semibold{
