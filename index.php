@@ -14,6 +14,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Readify</title>
+    <link rel="icon" href="assets/img/peep-27.svg">
     <link rel="stylesheet" href="src/output.css" />
   </head>
   <body>
@@ -119,7 +120,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
           <p>23091397083</p>
           <p>Universitas Negeri Surabaya</p>
           <div class="flex gap-4 mt-4 sm:gap-6">
-            <a href="https://github.com/"
+            <a href="https://github.com/MuhammadDafaAlvin"
               ><img
                 src="assets/img/github-mark.svg"
                 alt="github-mark"
@@ -141,7 +142,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
           <p>23091397083</p>
           <p>Universitas Negeri Surabaya</p>
           <div class="flex gap-4 mt-4 sm:gap-6">
-            <a href="https://github.com/"
+            <a href="https://github.com/Nuraini077"
               ><img
                 src="assets/img/github-mark.svg"
                 alt="github-mark"
@@ -167,7 +168,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
           <p>23091397083</p>
           <p>Universitas Negeri Surabaya</p>
           <div class="flex gap-4 mt-4 sm:gap-6">
-            <a href="https://github.com/"
+            <a href="https://github.com/FirzanZulzabbar"
               ><img
                 src="assets/img/github-mark.svg"
                 alt="github-mark"
